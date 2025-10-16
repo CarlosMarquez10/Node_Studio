@@ -1,12 +1,11 @@
 import express from "express";
+import Inicio from "./src/routes/inicio.routes";
 
 const app = express();
 const port = 3000;
 
 // ruta de unicio
-app.get('/', (req, res)=> {
-    res.send("Servidor desde Express!");
-});
+use.get("/", Inicio) // ruta de inicio
 
 // aqui vamos a iniciar el servidor
 app.listen(port, () =>{
